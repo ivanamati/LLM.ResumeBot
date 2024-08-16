@@ -40,13 +40,12 @@ def generate_answer(query,open_api_key):
     model="gpt-4o",
     openai_api_key=open_api_key)
     try:
-        
         retriever = rag(open_api_key)
         data = retriever.invoke(query)
-    except openai.error.AuthenticationError:
-        return "Authentication failed. Please check your API key."
     except openai.error.RateLimitError:
         return "Rate limit exceeded. Please wait and try again."
+    except openai.error.AuthenticationError:
+        return "Authentication failed. Please check your API key."
     except openai.error.OpenAIError as e:
         return f"An error occurred: {e}"
         
