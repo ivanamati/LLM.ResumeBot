@@ -9,6 +9,7 @@ st.markdown("""IvyBot is an AI assistant dedicated to assisting Ivana in her job
             but also showing her developing skills employing newest AI technology.""")
 
 company_name = st.sidebar.text_input('Name of your Company')
+openai_api_key = st.sidebar.text_input('OpenAI API key')
 
 if company_name:
     name_checker(company_name)
@@ -16,11 +17,11 @@ if company_name:
 with st.form('my_form'):
   text = st.text_area('Enter the question about Ivana (for recruiters only):')
   submitted = st.form_submit_button('ask IvyBot')
-#   if not openai_api_key.startswith('sk-'):
-#     st.warning('Please enter your OpenAI API key!', icon='⚠')
-#   if submitted and openai_api_key.startswith('sk-'): 
-  if submitted:
-    response = rag_resume_chatbot.generate_answer(text)
+  if not openai_api_key.startswith('sk-'):
+    st.warning('Please enter your OpenAI API key!', icon='⚠')
+  if submitted and openai_api_key.startswith('sk-'): 
+  #if submitted:
+    response = rag_resume_chatbot.generate_answer(text, openai_api_key)
     st.info(response)
 # st.info("Thank you for taking the time to chat with my AI assistant.")
 
