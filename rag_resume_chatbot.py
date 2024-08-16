@@ -1,5 +1,3 @@
-#from my_key import OPENAI_API_KEY
-
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai.embeddings import OpenAIEmbeddings
