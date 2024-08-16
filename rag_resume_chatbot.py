@@ -10,10 +10,6 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage
 
 
-# llm = ChatOpenAI(temperature=0,
-#     model="gpt-4o",
-#     openai_api_key=OPENAI_API_KEY,)
-
 def rag(open_api_key):
     # Load the document embed each chunk and load it into the vector store.
     raw_documents = TextLoader("my_bio1.txt").load()
@@ -39,15 +35,9 @@ def generate_answer(query,open_api_key):
     llm = ChatOpenAI(temperature=0,
     model="gpt-4o",
     openai_api_key=open_api_key)
-    try:
+
         retriever = rag(open_api_key)
         data = retriever.invoke(query)
-    except openai.error.RateLimitError:
-        return "Rate limit exceeded. Please wait and try again."
-    except openai.error.AuthenticationError:
-        return "Authentication failed. Please check your API key."
-    except openai.error.OpenAIError as e:
-        return f"An error occurred: {e}"
         
     SYSTEM_TEMPLATE = """
         You are IvyBot, an AI assistant dedicated to assisting Ivana in her job search by providing recruiters with relevant and concise information. 
