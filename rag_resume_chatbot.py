@@ -16,7 +16,7 @@ from langchain_core.messages import HumanMessage
 
 def rag(open_api_key):
     # Load the document embed each chunk and load it into the vector store.
-    raw_documents = TextLoader(r"\my_bio1.txt").load()
+    raw_documents = TextLoader("my_bio1.txt").load()
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
     documents = text_splitter.split_documents(raw_documents)
