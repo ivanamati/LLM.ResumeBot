@@ -1,5 +1,3 @@
-#from my_key import OPENAI_API_KEY
-
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai.embeddings import OpenAIEmbeddings
@@ -10,13 +8,9 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage
 
 
-# llm = ChatOpenAI(temperature=0,
-#     model="gpt-4o",
-#     openai_api_key=OPENAI_API_KEY,)
-
 def rag(open_api_key):
     # Load the document embed each chunk and load it into the vector store.
-    raw_documents = TextLoader(r"C:\Users\Ivana\Desktop\CODEProjects\LLM.ResumeBot\my_bio1.txt").load()
+    raw_documents = TextLoader("my_bio1.txt").load()
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
     documents = text_splitter.split_documents(raw_documents)
@@ -40,9 +34,9 @@ def generate_answer(query,open_api_key):
     model="gpt-4o",
     openai_api_key=open_api_key)
 
-    retriever = rag(open_api_key)
-    data = retriever.invoke(query)
-
+        retriever = rag(open_api_key)
+        data = retriever.invoke(query)
+        
     SYSTEM_TEMPLATE = """
         You are IvyBot, an AI assistant dedicated to assisting Ivana in her job search by providing recruiters with relevant and concise information. 
         If you do not know the answer, politely admit it and let recruiters know how to contact Ivana to get more information directly from her. 
