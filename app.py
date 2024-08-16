@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 import rag_resume_chatbot
 from name_checker import name_checker
 
