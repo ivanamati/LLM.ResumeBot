@@ -34,8 +34,8 @@ def generate_answer(query,open_api_key):
     model="gpt-4o",
     openai_api_key=open_api_key)
 
-        retriever = rag(open_api_key)
-        data = retriever.invoke(query)
+    retriever = rag(open_api_key)
+    data = retriever.invoke(query)
         
     SYSTEM_TEMPLATE = """
         You are IvyBot, an AI assistant dedicated to assisting Ivana in her job search by providing recruiters with relevant and concise information. 
