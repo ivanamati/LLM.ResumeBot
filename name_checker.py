@@ -5,7 +5,7 @@ def make_unique(name, existing_names):
         return None  # Indicates the name already exists
     return name
 
-file_path = r"C:\Users\Ivana\Desktop\CODEProjects\LLM.ResumeBot\recruiter_company.txt"
+file_path = r"\recruiter_company.txt"
 
 def name_checker(company_name):
     if company_name:
