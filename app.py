@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from rag_resume_chatbot import generate_answer
+import rag_resume_chatbot
 from name_checker import name_checker
 
 st.title("'IvyBot'")
