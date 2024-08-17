@@ -18,7 +18,7 @@ def rag(open_api_key):
     # Embedd the chunks and load it into vector store
     embeddings = OpenAIEmbeddings(api_key=open_api_key)
     # Pass the documents and embeddings inorder to create FAISS vector index
-    vectorindex_openai = FAISS.from_documents(documents, embeddings)
+    vectorindex_openai = FAISS.from_texts(documents, embeddings)
     # Save the vectorstore object locally
     vectorindex_openai.save_local("vectorindex_openai")
     # Load the vectorstore object
