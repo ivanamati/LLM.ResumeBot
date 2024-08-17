@@ -16,9 +16,9 @@ def rag(open_api_key):
     documents = text_splitter.split_documents(raw_documents)
     #print(documents[4])
     # Embedd the chunks and load it into vector store
-    embedding = OpenAIEmbeddings(api_key=open_api_key)
+    #embedding = OpenAIEmbeddings(api_key=open_api_key)
     # Pass the documents and embeddings inorder to create FAISS vector index
-    vectorindex_openai = FAISS.from_texts(documents, embedding)
+    vectorindex_openai = FAISS.from_texts(documents, OpenAIEmbeddings(api_key=open_api_key))
     # Save the vectorstore object locally
     vectorindex_openai.save_local("vectorindex_openai")
     # Load the vectorstore object
