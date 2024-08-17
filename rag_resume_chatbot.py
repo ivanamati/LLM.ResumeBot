@@ -13,7 +13,7 @@ def rag(open_api_key):
     raw_documents = TextLoader("my_bio1.txt").load()
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
-    texts = text_splitter.split_documents(raw_documents)
+    texts = text_splitter.split_text(raw_documents)
     #print(documents[4])
     # Embedd the chunks and load it into vector store
     #embedding = OpenAIEmbeddings(api_key=open_api_key)
