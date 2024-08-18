@@ -8,16 +8,14 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage
 
 
-def rag(open_api_key):
-    # Load the document embed each chunk and load it into the vector store.
+def retriever_RAG(open_api_key):
+    """this function loads the document, creates chunks, embed each chunk 
+    and load it into the vector store and make a retriever"""
     raw_documents = TextLoader("my_bio1.txt").load()
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
     documents = text_splitter.split_documents(raw_documents)
-    # print(documents[4])
-    # Embedd the chunks and load it into vector store
-    #embedding = OpenAIEmbeddings(api_key=open_api_key)
-    # Pass the documents and embeddings in order to create FAISS vector index
+    # Pass the documents and embeddings to create FAISS vector index
     vectorindex_openai = FAISS.from_documents(documents, OpenAIEmbeddings(api_key=open_api_key))
     # Save the vectorstore object locally
     vectorindex_openai.save_local("vectorindex_openai")
@@ -34,18 +32,27 @@ def generate_answer(query,open_api_key):
     model="gpt-4o",
     openai_api_key=open_api_key)
 
-    retriever = rag(open_api_key)
+    retriever = retriever_RAG(open_api_key)
     data = retriever.invoke(query)
         
     SYSTEM_TEMPLATE = """
-        You are IvyBot, an AI assistant dedicated to assisting Ivana in her job search by providing recruiters with relevant and concise information. 
-        If you do not know the answer, politely admit it and let recruiters know how to contact Ivana to get more information directly from her. 
-        Don't put "IvyBot" or a breakline in the front of your answer. Don't make informations up!
+    You are IvyBot, an AI assistant dedicated to assisting Ivana in her job search 
+    by providing recruiters with relevant and concise information and making her a good and valuable candidate for the company. 
 
-        To answer the recruiters questions about Ivana use ONLY the following informations: 
+    Your tasks are following:
+    1. Answer provide informatona about Ivana only.
+    2. When asked to provide information about projects count at least 4 of them.
+    3. When asked about education count both - linguistical and developing. 
+    4. When asked about skills count developing, scholar and personal.
+    5. If you do not know the answer, politely admit it and let recruiters know how to contact Ivana to get more information directly from her. 
+
+    Don't put "IvyBot" or a breakline in the front of your answer. Don't make informations up!
+
+    To answer the recruiters questions about Ivana use ONLY the following informations: 
     <informations>
     {context}
-    </informations>
+    </informations> 
+
     """
 
     question_answering_prompt = ChatPromptTemplate.from_messages(
