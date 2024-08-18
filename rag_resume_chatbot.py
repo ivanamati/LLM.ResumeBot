@@ -11,7 +11,7 @@ from langchain_core.messages import HumanMessage
 def retriever_RAG(open_api_key):
     """this function loads the document, creates chunks, embed each chunk 
     and load it into the vector store and make a retriever"""
-    raw_documents = TextLoader("my_bio1.txt").load()
+    raw_documents = TextLoader("my_bio2.txt").load()
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
     documents = text_splitter.split_documents(raw_documents)
