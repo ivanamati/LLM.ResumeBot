@@ -14,12 +14,11 @@ def rag(open_api_key):
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
     documents = text_splitter.split_documents(raw_documents)
-    print(documents[4])
+    # print(documents[4])
     # Embedd the chunks and load it into vector store
-    #embeddings = OpenAIEmbeddings(api_key=open_api_key)
-    # Pass the documents and embeddings inorder to create FAISS vector index
+    #embedding = OpenAIEmbeddings(api_key=open_api_key)
+    # Pass the documents and embeddings in order to create FAISS vector index
     vectorindex_openai = FAISS.from_documents(documents, OpenAIEmbeddings(api_key=open_api_key))
-    # vectorindex_openai = FAISS.from_texts()
     # Save the vectorstore object locally
     vectorindex_openai.save_local("vectorindex_openai")
     # Load the vectorstore object
