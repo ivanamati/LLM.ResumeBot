@@ -2,6 +2,7 @@
 
 IvyBot is an AI assistant designed to assist Ivana in her job search by providing recruiters with relevant and concise information about her academic background, programming experience, and skills. IvyBot uses a Retrieval-Augmented Generation (RAG) approach combined with GPT-4 to answer questions effectively.
 
+![alt text](image.png)
 ## Overview
 
 IvyBot leverages a combination of text embedding and vector search technologies to retrieve and present the most relevant information about Ivana in response to recruiters' queries. The assistant is tuned to provide specific details about Ivana’s projects, education, and skills, ensuring that recruiters receive accurate and helpful information.
