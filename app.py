@@ -32,5 +32,5 @@ st.sidebar.markdown("##### How to contact Ivana:")
 st.sidebar.info("✉️ ivanamati@gmail.com")
 
 st.sidebar.markdown("##### Ivana's Coding Projects:")
-st.sidebar.info("https://github.com/ivanamati")
 st.sidebar.info("https://www.linkedin.com/in/ivanamaticphd/ (Projects Section)")
+st.sidebar.info("https://github.com/ivanamati")
