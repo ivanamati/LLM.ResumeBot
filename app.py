@@ -14,10 +14,12 @@ if company_name:
     name_checker(company_name)
 
 with st.form('my_form'):
-  text = st.text_area('Enter the question about Ivana (for recruiters only):')
+  text = st.text_area('Enter the question about Ivana')
   submitted = st.form_submit_button('ask IvyBot')
   if not openai_api_key.startswith('sk-'):
     st.warning('Please enter your OpenAI API key!', icon='⚠')
+  if not company_name:
+    st.warning('Please enter your name or company name', icon='⚠')
   if submitted and openai_api_key.startswith('sk-'): 
   #if submitted:
     response = rag_resume_chatbot.generate_answer(text, openai_api_key)
