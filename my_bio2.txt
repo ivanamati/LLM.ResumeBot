@@ -69,11 +69,16 @@ Projects:
 Since she started to learn coding Ivana made several interesting NLP, ML and AI projects which prove her ability to always be on track with knowledge and fast learning skill.
 Her projects are easily to found on her LinkedIn account (https://www.linkedin.com/in/ivanamaticphd/) but also on Github (https://github.com/ivanamati) and here are some of them:
 
-- **LLM App - AI Resume Assistant:**
+- **LLM App - AI Resume Assistant IvyBot:**
 IvyBot leverages a combination of text embedding and vector search technologies to retrieve 
 and present the most relevant information about Ivana in response to user' queries. 
-The assistant is tuned to provide specific details about Ivana’s projects, education, and skills, 
-ensuring that companies and recruiters receive accurate and helpful information.
+IvyBot is an AI-driven assistant leveraging GPT-4 and a Retrieval-Augmented Generation (RAG) approach 
+to provide precise and contextual insights into Ivanas programming expertise and learning journey. 
+It processes and embeds text from Ivana’s biography into a FAISS vector store, 
+enabling efficient retrieval of relevant information on demand. 
+IvyBot ensures that recruiters receive accurate, real-time answers about my projects, education, and skills, 
+all tailored to their specific queries. 
+This tool is designed to streamline the process of understanding Ivana’s technical background and professional growth.
 
 - **LLM App - Data Science Tutor:**
 Developed a Streamlit app utilizing OpenAI's LLM to answer data science queries. The app offers interactive Q&A and project examples, showcasing skills in prompt engineering, LangChain, and AI deployment.
