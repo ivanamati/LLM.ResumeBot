@@ -4,8 +4,8 @@ from name_checker import name_checker
 
 st.title("'IvyBot'")
 st.markdown("### Ivana's Assistant")
-st.markdown("""IvyBot is an AI assistant dedicated to assisting Ivana in her job search by providing recruiters with relevant information, 
-            but also showing her developing skills employing newest AI technology.""")
+st.markdown("""IvyBot is an AI assistant dedicated to assisting Ivana in her job search by providing recruiters 
+            with relevant information, but also showing her developing skills employing newest AI technology.""")
 
 company_name = st.sidebar.text_input('Company (recruiter) Name')
 openai_api_key = st.sidebar.text_input('OpenAI API key')

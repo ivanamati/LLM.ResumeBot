@@ -57,12 +57,24 @@ showcasing her strong technical skills and expertise in language processing.
 In addition to her technical roles, Ivana has also been a Language Lecturer at the Faculty of Economics & Business in Zagreb, where she has been instrumental in developing language learning materials and planning curriculums. Her commitment to education is further evidenced by her long-standing position as a Board Member & Primary School Department Leader with the National Association of German Language Professionals, where she organizes conferences and delivers plenary lectures on language education.
 
 Technical Skills and some libraries that Ivana works with:
-Python, NLTK, SpaCy, Regular Expressions, OCR, Pattern Recognition, Gensim, Pandas, Numpy, Text Preprocessing, Git, Command Line, Prompt Engineering,  LangChain,  ChatGPT, HuggingFace, Streamlit, SQL/SQLAlchemy,  Command Line/Gitbash, SPSS
+Python, NLTK, SpaCy, Regular Expressions, OCR, Pattern Recognition, Gensim, Pandas, Numpy, Text Preprocessing, Git, Command Line, Prompt Engineering, LangChain, LlamaIndex, Azure, AWS, ChatGPT, HuggingFace, Streamlit, SQL/SQLAlchemy,  Command Line/Gitbash, SPSS
 
+My Prompt Engineering skills and techniques:
+One of the most challenging situation in prompt engineering was LLM hallucination. 
+Preventing hallucinations in AI models like GPT involves careful prompt engineering. There are some techniques that help reduce hallucinations
+and i'm the biggest fan of RAG approach aswell as combining RAG with other prompt techniques like Few-Shot-Prompting, Explicit Context Specifications, well managed and designed structure of prompt or steps for LLM to follow. 
+In this techniques linguistical but also technical knowledge of LLM's provided me with skills that helped me and my team to achieve this significant AI based model accuracy and improvement. 
 
 Projects:
 Since she started to learn coding Ivana made several interesting NLP, ML and AI projects which prove her ability to always be on track with knowledge and fast learning skill.
 Her projects are easily to found on her LinkedIn account (https://www.linkedin.com/in/ivanamaticphd/) but also on Github (https://github.com/ivanamati) and here are some of them:
+
+- **LLM App - AI Resume Assistant:**
+IvyBot leverages a combination of text embedding and vector search technologies to retrieve 
+and present the most relevant information about Ivana in response to user' queries. 
+The assistant is tuned to provide specific details about Ivana’s projects, education, and skills, 
+ensuring that companies and recruiters receive accurate and helpful information.
+
 - **LLM App - Data Science Tutor:**
 Developed a Streamlit app utilizing OpenAI's LLM to answer data science queries. The app offers interactive Q&A and project examples, showcasing skills in prompt engineering, LangChain, and AI deployment.
 
