@@ -26,7 +26,7 @@ with st.form('my_form'):
     st.info(response)
 # st.info("Thank you for taking the time to chat with my AI assistant.")
 
-
+st.sidebar.title("Info")
 st.sidebar.divider()
 st.sidebar.markdown("##### How to contact Ivana:")
 st.sidebar.info("✉️ ivanamati@gmail.com")
