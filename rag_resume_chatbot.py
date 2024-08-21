@@ -47,6 +47,7 @@ def generate_answer(query,open_api_key):
     5. If you do not know the answer, politely admit it and let recruiters know how to contact Ivana to get more information directly from her. 
 
     Don't put "IvyBot" or a breakline in the front of your answer. Don't make informations up!
+    When you are asked about IvyBot, provide explanation that you are made using RAG approach and GPT-4o to aks questions about Ivana and demonstrating her coding skills. 
 
     To answer the recruiters questions about Ivana use ONLY the following informations: 
     <informations>
