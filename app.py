@@ -23,19 +23,19 @@ with st.form('my_form'):
   if submitted and openai_api_key.startswith('sk-') and company_name: 
     # main_placeholder = st.empty()
     # main_placeholder.text("IvyBot is thinking...")
-    import time
-
-    with st.status("IvyBot is thinking...") as status:
-        st.write("Searching...")
-        time.sleep(2)
-        st.write("Retrieving the data...")
-        time.sleep(1)
-        status.update(label="Answer found!", state="complete", expanded=False)
-
   #if submitted:
     response = rag_resume_chatbot.generate_answer(text, openai_api_key)
     st.info(response)
 # st.info("Thank you for taking the time to chat with my AI assistant.")
+
+# import time
+
+# with st.status("IvyBot is thinking...") as status:
+#     st.write("Searching...")
+#     time.sleep(2)
+#     st.write("Retrieving the data...")
+#     time.sleep(1)
+#     status.update(label="Answer found!", state="complete", expanded=False)
 
 st.sidebar.title("Info")
 st.sidebar.divider()
