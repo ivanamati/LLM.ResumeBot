@@ -21,11 +21,11 @@ with st.form('my_form'):
   if not company_name:
     st.warning('Please enter your name or company name', icon='⚠')
   if submitted and openai_api_key.startswith('sk-') and company_name: 
-    main_placeholder = st.empty()
-    main_placeholder.text("IvyBot is thinking...")
+    # main_placeholder = st.empty()
+    # main_placeholder.text("IvyBot is thinking...")
     import time
 
-    with st.status("IvyBot is thinking...", expanded=True) as status:
+    with st.form("IvyBot is thinking...", expanded=True) as status:
         st.write("Searching for data...")
         time.sleep(2)
         st.write("Found data")
@@ -33,7 +33,7 @@ with st.form('my_form'):
         st.write("Retrieving the data...")
         time.sleep(1)
         status.update(label="Answer found!", state="complete", expanded=False)
-        
+
   #if submitted:
     response = rag_resume_chatbot.generate_answer(text, openai_api_key)
     st.info(response)
