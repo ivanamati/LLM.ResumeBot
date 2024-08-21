@@ -25,11 +25,9 @@ with st.form('my_form'):
     # main_placeholder.text("IvyBot is thinking...")
     import time
 
-    with st.status("IvyBot is thinking...", expanded=True) as status:
-        st.write("Searching for data...")
+    with st.status("IvyBot is thinking...") as status:
+        st.write("Searching...")
         time.sleep(2)
-        st.write("Found data")
-        time.sleep(1)
         st.write("Retrieving the data...")
         time.sleep(1)
         status.update(label="Answer found!", state="complete", expanded=False)
