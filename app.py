@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 import rag_resume_chatbot
 from name_checker import name_checker
 
@@ -6,7 +7,6 @@ st.title("'IvyBot'")
 st.markdown("### Ivana's AI Assistant")
 st.markdown("""IvyBot is here to assist Ivana in her job search by providing recruiters 
             with relevant information, but also showing her developing skills employing newest AI technology.""")
-st.status
 company_name = st.sidebar.text_input('Company (recruiter) Name')
 openai_api_key = st.sidebar.text_input('OpenAI API key')
 
@@ -23,19 +23,18 @@ with st.form('my_form'):
   if submitted and openai_api_key.startswith('sk-') and company_name: 
     # main_placeholder = st.empty()
     # main_placeholder.text("IvyBot is thinking...")
+    with st.status("IvyBot is thinking...") as status:
+        st.write("Searching the vector store...")
+        time.sleep(2)
+        st.write("Chunks found!")
+        time.sleep(1)
+        st.write("Retrieving the data...")
+        time.sleep(1)
+        status.update(label="Answer ready!", state="complete", expanded=False)
   #if submitted:
     response = rag_resume_chatbot.generate_answer(text, openai_api_key)
     st.info(response)
 # st.info("Thank you for taking the time to chat with my AI assistant.")
-
-# import time
-
-# with st.status("IvyBot is thinking...") as status:
-#     st.write("Searching...")
-#     time.sleep(2)
-#     st.write("Retrieving the data...")
-#     time.sleep(1)
-#     status.update(label="Answer found!", state="complete", expanded=False)
 
 st.sidebar.title("Info")
 st.sidebar.divider()
