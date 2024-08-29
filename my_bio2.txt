@@ -80,6 +80,21 @@ IvyBot ensures that recruiters receive accurate, real-time answers about my proj
 all tailored to their specific queries. 
 This tool is designed to streamline the process of understanding Ivana’s technical background and professional growth.
 
+- **LLM App - HR Resume Analyser:**
+Technologies: Python, Streamlit, Haystack framework, GPT-4, RAG pipeline
+AI Resume Analyst is a tool designed to streamline the recruitment process using cutting-edge AI and Natural Language Processing (NLP) technologies. 
+With AI Resume Analyst, recruiters can easily upload candidate resumes, ask specific questions, and receive detailed, context-aware answers, helping them find the perfect candidate for their job.
+Features of this App:
+Automated Resume Analysis: Upload candidate resumes in PDF format, and let AI extract and analyze the content.
+Context-Aware Q&A: Formulate clear and specific questions about candidates, and the AI will generate detailed answers based on the provided resumes.
+OpenAI GPT Integration: Leveraging the power of GPT-4 to generate human-like responses to your queries.
+Haystack Integration: Utilizes Haystack for document processing, embedding, and retrieval to ensure precise and relevant answers.
+
+
+- **LLM App - Article Analyser:**
+Technologies: Python, Streamlit, LangChain, FAISS, GPT-4
+Engineered a web app for analyzing news articles using RAG. The system processes text into embeddings for accurate, reference-supported user queries.
+
 - **LLM App - Data Science Tutor:**
 Developed a Streamlit app utilizing OpenAI's LLM to answer data science queries. The app offers interactive Q&A and project examples, showcasing skills in prompt engineering, LangChain, and AI deployment.
 
