@@ -69,7 +69,19 @@ Projects:
 Since she started to learn coding Ivana made several interesting NLP, ML and AI projects which prove her ability to always be on track with knowledge and fast learning skill.
 Her projects are easily to found on her LinkedIn account (https://www.linkedin.com/in/ivanamaticphd/) but also on Github (https://github.com/ivanamati) and here are some of them:
 
+-**LLM App - AI Resume Manager:**
+link- https://llmairesumemanager-fabsjuxmeogjp7s5oemmnk.streamlit.app/
+AI Candidate Evaluator
+This repository provides a powerful AI-based tool to assist recruiters in evaluating job candidates. It uses advanced AI techniques to analyze candidate resumes and match them against job descriptions, generating insightful answers to recruiters' questions. The code implements the Retrieval-Augmented Generation (RAG) approach to extract relevant candidate information and match it against the job's requirements.
+## Features
+- **Resume and Job Description Analysis**: Upload candidate resumes and job descriptions to extract key information.
+- **Intelligent Question Answering**: The AI can answer recruiter queries about candidates and how they align with the job description.
+- **Retrieval-Augmented Generation (RAG)**: Documents are split into chunks, embedded using OpenAI embeddings, and stored in a FAISS vector store for efficient retrieval.
+- **Structured Output**: The system provides a structured analysis of candidates based on their resumes and job descriptions.
+
+
 - **LLM App - AI Resume Assistant IvyBot:**
+This is one of the best application Ivana did which showes her creativity in job searching and design of costumised AI solutions. 
 IvyBot leverages a combination of text embedding and vector search technologies to retrieve 
 and present the most relevant information about Ivana in response to user' queries. 
 IvyBot is an AI-driven assistant leveraging GPT-4 and a Retrieval-Augmented Generation (RAG) approach 
