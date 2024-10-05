@@ -79,7 +79,6 @@ This repository provides a powerful AI-based tool to assist recruiters in evalua
 - **Retrieval-Augmented Generation (RAG)**: Documents are split into chunks, embedded using OpenAI embeddings, and stored in a FAISS vector store for efficient retrieval.
 - **Structured Output**: The system provides a structured analysis of candidates based on their resumes and job descriptions.
 
-
 - **LLM App - AI Resume Assistant IvyBot:**
 This is one of the best application Ivana did which showes her creativity in job searching and design of costumised AI solutions. 
 IvyBot leverages a combination of text embedding and vector search technologies to retrieve 
@@ -102,7 +101,6 @@ Context-Aware Q&A: Formulate clear and specific questions about candidates, and 
 OpenAI GPT Integration: Leveraging the power of GPT-4 to generate human-like responses to your queries.
 Haystack Integration: Utilizes Haystack for document processing, embedding, and retrieval to ensure precise and relevant answers.
 
-
 - **LLM App - Article Analyser:**
 Technologies: Python, Streamlit, LangChain, FAISS, GPT-4
 Engineered a web app for analyzing news articles using RAG. The system processes text into embeddings for accurate, reference-supported user queries.
@@ -116,11 +114,33 @@ Worked on an Automatic Speech Recognition (ASR) system for a Croatian Voice Assi
 - **Voice Assistant:**
 Created a voice assistant using Whisper and Google speech recognition engines. Integrated NLP for command processing and text-to-speech functionalities.
 
+- **ML App - Croatian Review Classifier:**
+ This application demonstrates Ivana's expertise in Natural Language Processing (NLP) and Machine Learning (ML) for text analysis. The Croatian Review Classifier is an AI-driven sentiment analysis tool designed to classify user reviews in the Croatian language as either positive or negative.
+The app leverages custom text-cleaning functions, vectorization techniques using Spacy embeddings, and several ML algorithms such as Naive Bayes, Gradient Boosting, 
+and Logistic Regression to perform classification. It processes user reviews by transforming them into numerical vectors, which are then used to train and test different ML models. 
+The model with the best performance, based on F1-score, is then used to predict the sentiment of new, unseen reviews.
+
+- **ML App - Emotion Classifier:**
+This application highlights Ivana's advanced skills in NLP and machine learning by classifying emotions in text data. 
+The Emotion Classifier is an ML model trained to identify and categorize text into three key emotions: anger, fear, and joy. 
+It uses a combination of text cleaning, feature extraction, and machine learning classifiers to predict the emotion behind each user comment.
+This project showcases Ivana’s ability to implement NLP pipelines and use machine learning models to classify text emotions with high accuracy.
+Technologies: Python, Spacy, Scikit-learn, Seaborn, Naive Bayes, Random Forest, Logistic Regression, TF-IDF
+
+- **ML App - Fake News Detector:** 
+This application is a sophisticated AI-driven tool built to classify news articles as either "FAKE" or "REAL." 
+The Fake News Detector showcases Ivana's skills in NLP and machine learning, focusing on analyzing the authenticity of online news content. 
+The project applies advanced text-cleaning techniques and multiple machine learning models to achieve high accuracy in classifying the credibility of news articles.
+This project exemplifies Ivana’s deep understanding of NLP, machine learning techniques, and the practical application of these technologies to detect misinformation.
+Technologies: Python, Spacy, Scikit-learn, Seaborn, Naive Bayes, Random Forest, Gradient Boosting, Logistic Regression, TF-IDF, CountVectorizer
+
+
 - **Starbucks Review Classifier:**
 Designed a sentiment analysis model for Starbucks reviews using NLP and machine learning techniques like logistic regression and SVMs. Emphasized data preprocessing and model evaluation.
 
 - **ChatGPT Web Assistant:**
 Developed a web-based AI assistant using Flask and ChatGPT, allowing users to interact with a conversational AI directly from a web browser.
+
 
 
 Career Goal:
@@ -177,11 +197,48 @@ Her scientific portfolio is available on https://www.croris.hr/osobe/profil/4169
 
 
 Availability:
-As Intern Ivana is actively seeking new job opportunities and is possibly ready to start next month.
+Ivana is actively seeking new job opportunities and is possibly ready to start next month.
 
 
 References and Recommendation letters:
-References and recommendation letters are available upon request.
+Recommendation letter from M47Labs: 
+    """M47 Labs & International Fiducia, S.L., a Spanish Company with CIF B67236083, located at Diputació
+    279, 3-6 in 08007, Barcelona, certifies that Ivana Matić has been working in this company from
+    10/01/2024 to 31/03/2024 as a Computational Linguist
+    In M47 Labs, we are focused on helping companies deliver high quality Software and Al products. We
+    also provide tailor made International Data Labelling Tools and Services.
+    Ivana has worked up to the date for one of our major clients within a Voice Assistance Software
+    Project. Amongst her duties:
+    ● Analysing existing data in her own language
+    ● Correct existing data to improve quality
+    ● Adding new training data if needed
+    ● Fixing bugs related to the automated speech recognition
+    ● Resolving localization issues
+    Ivana possesses excellent communication skills, and she has been a highly motivated and reliable
+    team member. She has a talent for conveying complex technical concepts in a clear and concise
+    manner. Her positive attitude, strong work ethic, and dedication to excellence have earned her the
+    respect and admiration of her peers.
+    Should you require any more information, please do not hesitate to contact the Human Resources
+    department at hr@m47labs.com."""
+
+Recommentation letter from Slverbrain AI AG:
+    """Ivana Matic worked on a pre-agreed pro-bono basis with Silver Brain AI AG during May-September 2024 on 
+    her own terms and flexibility of time and remote location to learn Data Science on industry use cases.
+    She demonstrated extraordinary brilliance on the tasks assigned to her related to prompt engineering 
+    of LLM pipelines. Her contribution included:
+    • CraNed prompts to facilitate efficient communication with LLMs using RAG approach for 
+    GenAI workflow automation tool.
+    • Developed creative and effective prompt strategies that enhanced the capability of AI 
+    models.
+    • Achieved significant improvements in prompt response accuracy (70 to 90%) and increased 
+    the efficiency of AI workflows through optimized prompt engineering techniques and refined 
+    queries.
+    • Data research and analysis to improve prompt-based AI model performance, while leading a 
+    small prompt engineer team.
+    I personally enjoyed every interaction with her as she brought positivity, dedication and problemsolving mindset. 
+    I believe that her capabilities go beyond prompt engineering as she can very well lead 
+    people, project and product development.
+    I wholeheartedly recommend her as an asset to any company."""
 
 
 Strengths and Advantages:
@@ -193,4 +250,8 @@ Ivana's unwavering pursuit of excellence may occasionally lead to in-depth analy
 
 
 Interests and Hobbies:
-Ivana's passion for technology extends beyond her professional life, where she continues to explore the cutting-edge world of GenAI, always eager to push the boundaries in various innovative projects. Outside of work, Ivana is a national champion in Latin American and ballroom dances, showcasing her dedication and discipline in the arts. She also enjoys losing herself in a good book, walking in nature, watching documentary movies, and immersing herself in music and concerts. Ivana values the simple pleasures of life, such as spending quality time with friends and family, whether it's over a shared coffee, matcha or during a peaceful walk.
+Ivana's passion for technology extends beyond her professional life, where she continues to explore the cutting-edge world of GenAI, 
+always eager to push the boundaries in various innovative projects. 
+Outside of work, Ivana is a national champion in Latin American and ballroom dances, showcasing her dedication and discipline in the arts. 
+She also enjoys losing herself in a good book, walking in nature, watching documentary movies, and immersing herself in music and concerts. 
+Ivana values the simple pleasures of life, such as spending quality time with friends and family, whether it's over a shared coffee, matcha or during a peaceful walk.
