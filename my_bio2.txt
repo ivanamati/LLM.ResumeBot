@@ -154,13 +154,14 @@ Ivana possesses a robust skill set that bridges the gap between linguistics and 
 - **AI and Machine Learning:** Skilled in developing and optimizing AI/ML models, with hands-on experience in deep learning, particularly with LSTM models, as well as prompt engineering and RAG to enhance model performance.
 - **Programming:** Strong command of Python and associated libraries like NLTK, SpaCy, Gensim, Pandas, and Numpy. Experienced in using regular expressions, OCR, and pattern recognition for complex language processing tasks.
 - **Data Analysis:** Expertise in data visualization, data analysis with Python, and working with tools such as SQL, SQLAlchemy, and SPSS. Ivana is also proficient in command-line tools like Git and Bash for efficient workflow management.
-- **Prompt Engineering:** Specialized in crafting and optimizing prompts for LLMs, leading to significant improvements in AI workflow accuracy and efficiency.
+- **Prompt Engineering:** Specialized in crafting and optimizing prompts for LLMs, leading to significant improvements in AI workflow accuracy and efficiency. Testing and refining prompts to ensure better LLM feedback. She also understands and includes LLM security and preventint prompt injections or jailbrakes. 
 - **Technical Tools:** Familiar with LangChain, HuggingFace, Streamlit, and various AI/ML development platforms, enhancing her ability to deploy and scale AI solutions effectively.
 Ivana’s skills reflect her comprehensive understanding of both the theoretical and practical aspects of AI and NLP, making her a versatile and capable professional in the tech industry.
 
 
 Certification:
 Ivana has completed several prestigious certifications that bolster her expertise in AI, machine learning, and data analysis, including:
+- **IBM & Coursera: Prompt Injection Vulnerabilities**  
 - **IBM: Prompt Engineering**  
 - **IBM: Conversational AI**  
 - **IBM: Data Analysis with Python**  
@@ -242,7 +243,7 @@ Recommentation letter from Slverbrain AI AG:
 
 
 Strengths and Advantages:
-Ivana's strengths lie in a profound passion for technology, languages, self-development, innovative problem-solving, and client-centric solutions.
+Ivana's strengths lie in a profound passion for technology, languages, self-development, eye for a detail, innovative problem-solving, and client-centric solutions.
 
 
 Weaknesses and Disadvantages:

@@ -11,7 +11,7 @@ from langchain_core.messages import HumanMessage
 def retriever_RAG(open_api_key):
     """this function loads the document, creates chunks, embed each chunk 
     and load it into the vector store and make a retriever"""
-    raw_documents = TextLoader("my_bio2.txt").load()
+    raw_documents = TextLoader("my_bio2.txt", encoding="utf-8").load()
     # Split it into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 900, chunk_overlap = 200, length_function = len)
     documents = text_splitter.split_documents(raw_documents)
@@ -40,8 +40,8 @@ def generate_answer(query,open_api_key):
     by providing recruiters with relevant and concise information and making her a good and valuable candidate for the company. 
 
     Your tasks are following:
-    1. Answer provide informatona about Ivana only.
-    2. When asked to provide information about projects count at least 4 of them.
+    1. Answer provide information about Ivana only. 
+    2. When asked to provide information about projects count at least 4 of them and make a short explanation about technical insights.
     3. When asked about education count both - linguistical and developing. 
     4. When asked about skills count developing, scholar and personal.
     5. If you do not know the answer, politely admit it and let recruiters know how to contact Ivana to get more information directly from her. 
@@ -58,10 +58,7 @@ def generate_answer(query,open_api_key):
 
     question_answering_prompt = ChatPromptTemplate.from_messages(
         [
-            (
-                "system",
-                SYSTEM_TEMPLATE,
-            ),
+            ("system", SYSTEM_TEMPLATE,),
             MessagesPlaceholder(variable_name="messages"),
         ]
     )
@@ -71,11 +68,15 @@ def generate_answer(query,open_api_key):
     answer = document_chain.invoke(
         {
             "context": data,
-            "messages": [
-                HumanMessage(content=query)
-            ],
+            "messages": [HumanMessage(content=query)],
         }
     )
     print()
-    print(answer)
+    # counter = 0
+    # for content in data:
+    #     counter += 1
+    #     print("chunk", counter, "chunk_size: ", len(content.page_content))
+    #     print (content.page_content, sep="\n")
+
+    print("answer:", "\n" ,answer)
     return answer
