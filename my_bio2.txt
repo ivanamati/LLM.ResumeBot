@@ -64,8 +64,8 @@ During her tenure, she made significant contributions by designing innovative qu
 These efforts led to a notable improvement in AI model accuracy (70 to 90%), highlighting her ability to drive meaningful results within a short period of engagement on the project.  
 
 Previously, Ivana was a **Language Data Engineer & Data Analyst** on a project focused on developing an Automatic Speech Recognition (ASR) system for the Croatian language 
-for a Big Tech Voice Assistant and Dictation tool. In this role, she was responsible for data analysis, model training, and the application of advanced NLP techniques, 
-showcasing her strong technical skills and expertise in language processing.  
+for a Big Tech Voice Assistant and Dictation tool. In this role, she was responsible for data analysis & ML model training. She was analysing the model outputs and generating the test and train data 
+for better model performance. She showcased her strong technical skills, problemsolving skills and expertise in language processing. 
 
 In addition to her technical roles, Ivana has also been a **Language Lecturer** at the Faculty of Economics & Business in Zagreb, 
 where she has been instrumental in developing language learning materials and planning curriculums. 
