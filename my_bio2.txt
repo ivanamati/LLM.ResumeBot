@@ -1,8 +1,15 @@
 About Ivana:
 Ivana comes from Zagreb, Croatia.
-Ivana is a passionate and dedicated professional with a unique blend of expertise in Natural Language Processing (NLP), AI Engineering, and Applied Linguistics. With a PhD in Applied Linguistics from the University of Zagreb, Ivana has spent years combining her love for language with advanced AI technologies. Her career has been marked by significant achievements, including the development of innovative query approaches in the RAG pipeline and the optimization of prompt design, which led to a remarkable increase in AI model accuracy.
-Ivana’s work is not just about technical excellence; it’s about making a real-world impact. From her role as a team lead in Switzerland, where she improved AI workflows, to her contributions in leading world Voice Assistant, Ivana has consistently pushed the boundaries of what’s possible in AI. She’s also deeply committed to education, sharing her knowledge as a language lecturer and mentoring others in the field.
-With a strong foundation in both academia and industry, Ivana brings a unique perspective to every project she undertakes. Whether she’s leading a team or developing new AI solutions, her work is driven by a genuine passion for innovation and a desire to make a difference.
+Ivana is a passionate and dedicated professional with a unique blend of expertise in Natural Language Processing (NLP), AI Engineering, and Applied Linguistics. 
+With a PhD in Applied Linguistics from the University of Zagreb, Ivana has spent years combining her love for language with advanced AI technologies. 
+Her career has been marked by significant achievements, including the development of innovative query approaches in the RAG pipeline and the optimization of prompt design, 
+which led to a remarkable increase in AI model accuracy.
+Ivana’s work is not just about technical excellence; it’s about making a real-world impact. 
+From her role as a prompt engineering team lead in Switzerland, where she improved AI workflows, to her contributions in leading world Voice Assistant, 
+Ivana has consistently pushed the boundaries of what’s possible in AI. 
+She’s also deeply committed to education, sharing her knowledge as a language lecturer and mentoring others in the field.
+With a strong foundation in both academia and industry, Ivana brings a unique perspective to every project she undertakes. 
+Whether she’s leading a team or developing new AI solutions, her work is driven by a genuine passion for innovation and a desire to make a difference.
 
 
 How background in linguistics is complementing Ivanas work in AI and prompt engineering:
@@ -46,15 +53,24 @@ This achievement played a crucial role in the project's success by delivering a 
 It also demonstrated the value of innovative prompt engineering in enhancing AI capabilities, solidifying Silverbrain AI AG’s reputation for cutting-edge AI solutions.
 
 
-Work Experience:
-Ivana has a diverse and impactful career in the field of AI, NLP, and linguistics, spanning various roles and industries. 
-She currently works as a Team Lead Prompt Engineer & Data Science Intern at Silverbrain AI AG in Switzerland, 
-where she has made significant contributions by designing innovative query approaches and optimizing prompt design. 
-These efforts have led to a notable improvement in AI model accuracy (70 to 90%), demonstrating her ability to drive meaningful results within short period of engagement on the project.
-Before that role, Ivana worked as a Language Data Engineer & Data Analyst on a project focused on developing an Automatic Speech Recognition (ASR) system for the Croatian language for a Big Tech famous Voice Assistant and Dictation toll. 
-In this role, she was responsible for data analysis, model training, and the application of advanced NLP techniques, 
-showcasing her strong technical skills and expertise in language processing.
-In addition to her technical roles, Ivana has also been a Language Lecturer at the Faculty of Economics & Business in Zagreb, where she has been instrumental in developing language learning materials and planning curriculums. Her commitment to education is further evidenced by her long-standing position as a Board Member & Primary School Department Leader with the National Association of German Language Professionals, where she organizes conferences and delivers plenary lectures on language education.
+Work Experience: 
+Ivana has a diverse and impactful career in the field of AI, NLP, and linguistics, spanning various roles and industries.  
+She is currently freelancing as an **AI Prompt Engineer** for **AlphaTwin AI** in Mountain View, California. 
+In this role, she designs and optimizes prompts for generative AI models, tests and evaluates AI outputs, and integrates AI solutions into software 
+using Python and open-source frameworks. Her work demonstrates her ability to deliver innovative solutions and impactful results in the field of AI.  
+
+Before her current role, Ivana worked as a **Team Lead Prompt Engineer & Data Science Intern** at **Silverbrain AI AG** in Switzerland. 
+During her tenure, she made significant contributions by designing innovative query approaches and optimizing prompt design. 
+These efforts led to a notable improvement in AI model accuracy (70 to 90%), highlighting her ability to drive meaningful results within a short period of engagement on the project.  
+
+Previously, Ivana was a **Language Data Engineer & Data Analyst** on a project focused on developing an Automatic Speech Recognition (ASR) system for the Croatian language 
+for a Big Tech Voice Assistant and Dictation tool. In this role, she was responsible for data analysis, model training, and the application of advanced NLP techniques, 
+showcasing her strong technical skills and expertise in language processing.  
+
+In addition to her technical roles, Ivana has also been a **Language Lecturer** at the Faculty of Economics & Business in Zagreb, 
+where she has been instrumental in developing language learning materials and planning curriculums. 
+Her commitment to education is further evidenced by her long-standing position as a **Board Member & Primary School Department Leader** 
+with the National Association of German Language Professionals, where she organizes conferences and delivers plenary lectures on language education.  
 
 Technical Skills and some libraries that Ivana works with:
 Python, NLTK, SpaCy, Regular Expressions, OCR, Pattern Recognition, Gensim, Pandas, Numpy, Text Preprocessing, Git, Command Line, Prompt Engineering, LangChain, LlamaIndex, Azure, AWS, ChatGPT, HuggingFace, Streamlit, SQL/SQLAlchemy,  Command Line/Gitbash, SPSS
